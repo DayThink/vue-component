@@ -22,6 +22,11 @@
           <a class="page-link" href="#/nav">导航</a>
         </p>
       </div>
+      <div class="img-box">
+        <p class="img-item">
+          <a class="page-link" href="#/vuex">Vuex</a>
+        </p>
+      </div>
       <!--<div class="img-box">-->
         <!--<p class="img-item">-->
           <!--<a class="page-link" href="#/btn">QUI<br/>按钮</a>-->

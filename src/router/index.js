@@ -1,10 +1,12 @@
 import Vue from 'vue'
-import Router from 'vue-router'
+import VueRouter from 'vue-router'
 // import HelloWorld from '@/components/HelloWorld'
 
-Vue.use(Router)
+Vue.use(VueRouter)
 
-export default new Router({
+export default new VueRouter({
+  // 去除地址栏中#
+  // mode: 'history',
   routes: [
     // {
     //   path: '/',
@@ -35,6 +37,34 @@ export default new Router({
       path: '/nav',
       name: 'nav',
       component: () => import('@/views/pageQuiNav.vue')
+    },
+    {
+      path: '/vuex',
+      name: 'vuexCity',
+      component: () => import('@/views/vuexCity.vue'),
+      children: [
+        // 需要在父组件中引入,否则children的页面不会生效<router-view/>
+        {
+          path: 'list',
+          // component: () => import('@/components/city-list.vue')
+          component: resolve => {
+            require(['@/components/city-list.vue'], resolve)
+          }
+        },
+        {
+          path: 'info',
+          component: () => import('@/components/city-info.vue')
+        }
+      ]
     }
+    // {
+    //   path: '/vuex',
+    //   name: 'vuexCity',
+    //   components: {
+    //     default: () => import('@/views/vuexCity.vue'),
+    //     list: () => import('@/components/city-list.vue'),
+    //     info: () => import('@/components/city-info.vue')
+    //   }
+    // }
   ]
 })

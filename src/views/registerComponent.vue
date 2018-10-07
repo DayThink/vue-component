@@ -9,7 +9,7 @@
 <script>
 import simpleChild from '@/components/simple-child'
 export default {
-  name: 'registerComponent.vue',
+  name: 'registerComponent',
   components: {
     simpleChild
   }

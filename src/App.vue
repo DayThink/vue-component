@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <router-link tag='a' to="/" style="position: absolute; right: 30px; top: 20px">首页</router-link>
     <img src="./assets/logo.png">
     <router-view/>
   </div>
