@@ -1,4 +1,4 @@
-<!-- 子组件通过emit注册的事件回调父组件的事件响应函数 -->
+<!-- 父组件上使用v-model,子组件上使用model -->
 <template>
   <div>
     <!-- 在input标签上时 v-model == value + input -->
@@ -7,7 +7,8 @@
     <model-input v-model="msg"></model-input>
     <span>父组件:{{msg}}</span>
 
-    <p></p><p></p>
+    <p></p>
+    <p></p>
     <!-- model选项可以指定当前的事件类型和传入的props 因此可以解决v-model默认只能是value + input -->
     <model-conponent value="type1" :checked="checked"></model-conponent>
     <model-conponent value="type2" :checked="checked" @change="change"></model-conponent>

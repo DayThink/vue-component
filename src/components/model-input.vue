@@ -8,13 +8,17 @@
 export default {
   name: 'modelInput',
 
+  // 利用model强制修改默认input事件为input-fn事件
+  // model: {
+  //   prop: 'value',
+  //   event: 'input-fn'
+  // },
   props: {
     value: String
   },
   methods: {
     input () {
       console.log('子组件 == ', event.target.value)
-      // 为什么这里把 'input' 作为触发事件的事件名？`input` 在哪定义的
       this.$emit('input', event.target.value)
     }
   }
