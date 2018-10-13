@@ -7,37 +7,37 @@
 </template>
 
 <script>
-  import quiButton from '../components/quiButton.vue'
-  import quiArrow from '../components/quiArrow.vue'
-  export default{
-    props:{
-      msg: {
-        default: '下载'
-      },
-      tipsText: {
-        default: '默认的文案'
-      },
-      currentView:{
-        default: 'qui-btn'
-      },
-      btnClickEvent: {/*方便每个子组件分配各自的触发事件*/
-        type: Function,
-        default: function () {
-          alert(this.msg + '我是默认事件');
-        }
-      }
+import quiButton from '../components/quiButton.vue'
+import quiArrow from '../components/quiArrow.vue'
+export default{
+  props: {
+    msg: {
+      default: '下载'
     },
-    components: {
-      'qui-btn': quiButton,
-      'qui-arrow': quiArrow
+    tipsText: {
+      default: '默认的文案'
     },
-    methods: {
-      clickEvent: function () {
-        this.btnClickEvent();
-        this.$emit('btnClickEvent');
+    currentView: {
+      default: 'qui-btn'
+    },
+    btnClickEvent: { /* 方便每个子组件分配各自的触发事件 */
+      type: Function,
+      default: function () {
+        alert(this.msg + '我是默认事件')
       }
     }
+  },
+  components: {
+    'qui-btn': quiButton,
+    'qui-arrow': quiArrow
+  },
+  methods: {
+    clickEvent: function () {
+      this.btnClickEvent()
+      this.$emit('btnClickEvent')
+    }
   }
+}
 </script>
 <style scoped>
   .qui-list{
@@ -66,4 +66,3 @@
     font-size: 14px;
   }
 </style>
-

@@ -1,4 +1,3 @@
-//index.vue
 <template>
   <div id="pageQuiList">
     <qui-list tipsText="自定义文案，默认右边是按钮" msg="弹层"></qui-list>
