@@ -8,4 +8,9 @@ https://github.com/sunyuhui/Amir-ui
 
 
 vuex:
+https://segmentfault.com/a/1190000011914191
 https://github.com/timdongSuper/vuexSimpleDemo
+
+
+Vue Router
+https://router.vuejs.org/zh/

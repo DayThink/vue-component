@@ -9,6 +9,26 @@
       </div>
       <div class="img-box">
         <p class="img-item">
+          <a class="page-link" href="#/props">props</a>
+        </p>
+      </div>
+      <div class="img-box">
+        <p class="img-item">
+          <a class="page-link" href="#/emit">emit</a>
+        </p>
+      </div>
+      <div class="img-box">
+        <p class="img-item">
+          <a class="page-link" href="#/vmodel">model(双向绑定)</a>
+        </p>
+      </div>
+      <div class="img-box">
+        <p class="img-item">
+          <a class="page-link" href="#/vuex">vuex</a>
+        </p>
+      </div>
+      <div class="img-box">
+        <p class="img-item">
           <a class="page-link" href="#/btn">按钮</a>
         </p>
       </div>
@@ -24,7 +44,7 @@
       </div>
       <div class="img-box">
         <p class="img-item">
-          <a class="page-link" href="#/vuex">Vuex</a>
+          <a class="page-link" href="#/router">router-view</a>
         </p>
       </div>
       <!--<div class="img-box">-->

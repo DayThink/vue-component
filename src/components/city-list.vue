@@ -21,7 +21,7 @@ export default {
       // 调用vuex的ations设置城市的值
       this.$store.dispatch('setCityName', this.cityArr[index])
       // 返回到首页
-      this.$router.push('/vuex/info')
+      this.$router.push('/router/info')
     }
   },
   mounted () {

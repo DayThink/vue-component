@@ -24,6 +24,26 @@ export default new VueRouter({
       component: () => import('@/views/registerComponent.vue')
     },
     {
+      path: '/props',
+      name: 'props',
+      component: () => import('@/views/props.vue')
+    },
+    {
+      path: '/emit',
+      name: 'emit',
+      component: () => import('@/views/emit.vue')
+    },
+    {
+      path: '/vmodel',
+      name: 'vmodel',
+      component: () => import('@/views/vModel.vue')
+    },
+    {
+      path: '/vuex',
+      name: 'vuex',
+      component: () => import('@/views/vuex.vue')
+    },
+    {
       path: '/btn',
       name: 'btn',
       component: () => import('@/views/pageQuiButton.vue')
@@ -39,7 +59,7 @@ export default new VueRouter({
       component: () => import('@/views/pageQuiNav.vue')
     },
     {
-      path: '/vuex',
+      path: '/router',
       name: 'vuexCity',
       component: () => import('@/views/vuexCity.vue'),
       children: [

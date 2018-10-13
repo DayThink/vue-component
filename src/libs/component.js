@@ -1,6 +1,6 @@
 import Vue from 'vue'
 
-import globalRegister from '../components/global-register'
+import globalRegister from '@/components/global-register'
 
 // 法一:全局注册子组件
 // Vue.component('Child', {

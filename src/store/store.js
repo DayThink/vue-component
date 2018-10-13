@@ -20,7 +20,8 @@ let store = new Vuex.Store({
   // 1. state
   state: {
     city: '未知城市',
-    userName: ''
+    userName: '',
+    g_logo: ''
   },
 
   // 2. getters
@@ -32,6 +33,10 @@ let store = new Vuex.Store({
 
     getUserName (state) {
       return state.userName
+    },
+
+    getLogo (state) {
+      return state.g_logo
     }
   },
 
@@ -51,6 +56,10 @@ let store = new Vuex.Store({
 
     setUserName ({commit, state}, name) {
       commit('setUserName', name)
+    },
+
+    setLogo ({commit, state}, name) {
+      commit('setLogo', name)
     }
   },
   // 4. mutations，供actions调用
@@ -63,6 +72,9 @@ let store = new Vuex.Store({
 
     setUserName (state, name) {
       state.userName = name
+    },
+    setLogo (state, name) {
+      state.g_logo = name
     }
   }
 })
