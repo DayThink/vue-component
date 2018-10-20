@@ -1,6 +1,13 @@
 Vue组件
 
-参考资料
+1.运行环境搭建
+git clone
+npm install
+# serve examples at localhost:9080
+npm run dev
+
+
+2.参考资料
 https://github.com/LanlanXu/geetest-test
 https://myslide.cn/slides/1459
 https://cloud.tencent.com/developer/column/1930

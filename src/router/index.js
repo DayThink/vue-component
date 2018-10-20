@@ -44,6 +44,11 @@ export default new VueRouter({
       component: () => import('@/views/vuex.vue')
     },
     {
+      path: '/slot',
+      name: 'slot',
+      component: () => import('@/views/slot.vue')
+    },
+    {
       path: '/btn',
       name: 'btn',
       component: () => import('@/views/pageQuiButton.vue')
