@@ -34,6 +34,11 @@
       </div>
       <div class="img-box">
         <p class="img-item">
+          <a class="page-link" href="#/active">动态组件</a>
+        </p>
+      </div>
+      <div class="img-box">
+        <p class="img-item">
           <a class="page-link" href="#/btn">按钮</a>
         </p>
       </div>

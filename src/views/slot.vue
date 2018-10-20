@@ -1,4 +1,4 @@
-<!-- 父组件中引入子组件slot-child.vue -->
+<!-- slot: 父组件中引入子组件slot-child.vue -->
 <template>
   <div>
     <slot-child :btn-name="btnName" @update="p_update">
