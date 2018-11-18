@@ -57,6 +57,11 @@
           <a class="page-link" href="#/router">router-view</a>
         </p>
       </div>
+      <div class="img-box">
+        <p class="img-item">
+          <a class="page-link" href="#/steps">步骤</a>
+        </p>
+      </div>
       <!--<div class="img-box">-->
         <!--<p class="img-item">-->
           <!--<a class="page-link" href="#/btn">QUI<br/>按钮</a>-->

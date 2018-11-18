@@ -86,6 +86,11 @@ export default new VueRouter({
           component: () => import('@/components/city-info.vue')
         }
       ]
+    },
+    {
+      path: '/steps',
+      name: 'steps',
+      component: () => import('@/views/stepsDemo.vue')
     }
     // {
     //   path: '/vuex',
